@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Electrónica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Tienda Tech ⚡</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="productos" id="lista-productos">
+            <h2>Productos Disponibles</h2>
+            <div class="grid-productos">
+                
+                <div class="tarjeta-producto">
+                    <h3>Audífonos Inalámbricos Blancos</h3>
+                    <p>Diseño ergonómico y excelente sonido.</p>
+                    <p class="precio">$200.00 MXN</p>
+                    <button onclick="agregarAlCarrito('Audífonos Inalámbricos Blancos', 200)">Agregar al Carrito</button>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <h3>Reloj Inalámbrico</h3>
+                    <p>Pantalla táctil y monitoreo de actividad.</p>
+                    <p class="precio">$200.00 MXN</p>
+                    <button onclick="agregarAlCarrito('Reloj Inalámbrico', 200)">Agregar al Carrito</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="carrito">
+            <h2>Tu Carrito 🛒</h2>
+            <ul id="elementos-carrito">
+                </ul>
+            <h3>Total: $<span id="total">0.00</span> MXN</h3>
+
+            <button class="btn-whatsapp" onclick="enviarWhatsApp()">
+                Enviar Pedido por WhatsApp 📱
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
